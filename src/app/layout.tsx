@@ -1,8 +1,14 @@
+import React from "react";
 import './globals.css'
 import {Montserrat} from 'next/font/google'
-import React from "react";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+
+
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -18,9 +24,11 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en" className={montserrat.className}>
         <body>
+        <div className="container">
             <Navbar/>
-                {children}
+            {children}
             <Footer/>
+        </div>
         </body>
         </html>
     )
