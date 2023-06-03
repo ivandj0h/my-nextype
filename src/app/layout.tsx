@@ -3,7 +3,6 @@ import {Montserrat} from 'next/font/google'
 import React from "react";
 
 const roboto = Montserrat({
-  weight: '300',
   subsets: ['latin'],
   display: 'swap',
 });
