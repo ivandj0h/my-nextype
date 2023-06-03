@@ -4,14 +4,14 @@ import React from "react";
 import {container, mainStyle, textLg} from "@/utils/styles-collections";
 
 
-const HomePage: React.FC = () => {
+const BlogPage: React.FC = () => {
     return (
         <main className={mainStyle}>
             <div className={container}>
-                <h1 className={[textLg, "pt-8"].join(" ")}>Welcome to My NexType</h1>
+                <h1 className={[textLg, "pt-8"].join(" ")}>This is Blog Page</h1>
             </div>
         </main>
     );
 }
 
-export default HomePage;
+export default BlogPage;

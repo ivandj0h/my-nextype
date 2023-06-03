@@ -1,13 +1,14 @@
 "use client"
 
 import React from "react";
+import {container, mainStyle, textLg} from "@/utils/styles-collections";
 
 
 const AboutPage: React.FC = () => {
     return (
-        <main className="flex">
-            <div className="container mx-auto text-center">
-                <h1 className="text-lg p-4">This is About Page</h1>
+        <main className={mainStyle}>
+            <div className={container}>
+                <h1 className={[textLg, "pt-8"].join(" ")}>This is About Page</h1>
             </div>
         </main>
     );
