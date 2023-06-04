@@ -1,13 +1,13 @@
 import React from "react";
 import './globals.css'
 import {Montserrat} from 'next/font/google'
-import { config } from '@fortawesome/fontawesome-svg-core'
+import {config} from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+
 config.autoAddCss = false
 
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
-
 
 
 const montserrat = Montserrat({

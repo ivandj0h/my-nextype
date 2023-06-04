@@ -1,14 +1,15 @@
 .container {
-    height: 100px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+    z-index: 99;
+    background-color: white;
+    border-bottom: 1px solid #eee;
 }
 
 .logo {
     font-size: 22px;
     font-weight: 700;
     color: var(--foreground);
+    align-items: center;
 }
 
 .links {
