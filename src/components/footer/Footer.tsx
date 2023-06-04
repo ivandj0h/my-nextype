@@ -1,10 +1,12 @@
 "use client"
 
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from "next/link";
+
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 import styles from "./footer.module.css";
-import {faFacebook, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {socialIcons} from "@/utils/nav-links/FooterLinks";
 
 const Footer: React.FC = () => {
     return (
@@ -12,9 +14,13 @@ const Footer: React.FC = () => {
             <div className={styles.container}>
                 <div>&copy; 2023 <span className="font-bold">ivandjoh</span>. All right reserved</div>
                 <div className={styles.socials}>
-                    <FontAwesomeIcon icon={faFacebook} />
-                    <FontAwesomeIcon icon={faLinkedin} />
-                    <FontAwesomeIcon icon={faGithub} />
+                    {socialIcons.map((socialIcon, i) => {
+                        return (
+                            <Link href={socialIcon.url} key={i} className={styles.link} target="_blank">
+                                <FontAwesomeIcon icon={socialIcon.icon}/>
+                            </Link>
+                        );
+                    })}
                 </div>
             </div>
         </>
