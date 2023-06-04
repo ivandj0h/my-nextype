@@ -8,7 +8,7 @@ import Image from "next/image";
 const HomePage: React.FC = () => {
     return (
         <>
-            <div className="flex h-16 items-center justify-center gap-100">
+            <div className="flex h-16 items-center justify-center gap-100 mt-8">
                 <div className="flex  flex-1 flex-col gap-20">
                     <h1 className="text-8xl ease-linear">The Coding Crusader</h1>
                     <p className="text-2xl font-light  ml-2">
