@@ -8,12 +8,18 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import styles from "./footer.module.css";
 import {socialIcons} from "@/utils/nav-links/FooterLinks";
 
-const Footer: React.FC = () => {
+type FooterProps = {
+    className?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ className }) => {
     return (
         <>
-            <div className={styles.container}>
-                <div>&copy; 2023 <span className="font-bold">ivandjoh</span>. All right reserved</div>
-                <div className={styles.socials}>
+            <div className={`${styles.container} ${className}  flex justify-between bg-white border-t border-gray-200 h-24 p-2`}>
+                <div className="flex items-center px-4 sm:px-6 lg:px-8">
+                    &copy; 2023 <span className="font-bold">ivandjoh</span>. All right reserved
+                </div>
+                <div className={`${styles.socials} flex justify-end space-x-4 px-4 sm:px-6 lg:px-8`}>
                     {socialIcons.map((socialIcon, i) => {
                         return (
                             <Link href={socialIcon.url} key={i} className={styles.link} target="_blank">
@@ -23,6 +29,7 @@ const Footer: React.FC = () => {
                     })}
                 </div>
             </div>
+
         </>
     );
 }

@@ -8,8 +8,8 @@ import Image from "next/image";
 const HomePage: React.FC = () => {
     return (
         <>
-            <div className="flex h-16 items-center justify-center gap-100 mt-8">
-                <div className="flex  flex-1 flex-col gap-20">
+            <div className="flex items-center justify-center gap-5 mt-48">
+                <div className="flex flex-1 flex-col gap-5">
                     <h1 className="text-8xl ease-linear">The Coding Crusader</h1>
                     <p className="text-2xl font-light  ml-2">
                         Welcome to my site, where the Coding Crusader breathes life into the abstract world of

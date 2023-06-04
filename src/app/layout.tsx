@@ -23,12 +23,12 @@ export const metadata = {
 export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en" className={montserrat.className}>
-        <body>
-        <div className="container">
-            <Navbar/>
+        <body className="flex flex-col min-h-screen">
+        <Navbar/>
+        <div className="container flex-grow">
             {children}
-            <Footer/>
         </div>
+        <Footer className="mt-auto"/>
         </body>
         </html>
     )
