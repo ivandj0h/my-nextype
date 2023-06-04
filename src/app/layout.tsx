@@ -28,7 +28,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
         <div className="container flex-grow">
             {children}
         </div>
-        <Footer className="mt-auto"/>
+        <Footer className="bg-gray-200 py-4 px-6 fixed bottom-0 w-full flex justify-between border-t border-gray-200 h-24 p-2" />
         </body>
         </html>
     )

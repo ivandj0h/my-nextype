@@ -15,9 +15,9 @@ type FooterProps = {
 const Footer: React.FC<FooterProps> = ({ className }) => {
     return (
         <>
-            <div className={`${styles.container} ${className}  flex justify-between bg-white border-t border-gray-200 h-24 p-2`}>
+            <div className={`${styles.container} ${className}  `}>
                 <div className="flex items-center px-4 sm:px-6 lg:px-8">
-                    &copy; 2023 <span className="font-bold">ivandjoh</span>. All right reserved
+                    &copy; 2023 &nbsp;&nbsp;<span className="font-bold">ivandjoh</span>. All right reserved
                 </div>
                 <div className={`${styles.socials} flex justify-end space-x-4 px-4 sm:px-6 lg:px-8`}>
                     {socialIcons.map((socialIcon, i) => {
