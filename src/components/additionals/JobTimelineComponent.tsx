@@ -7,19 +7,19 @@ const JobTimelineComponent: React.FC = () => {
     return (
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
             {WorkingExperiences.map((experience) => (
-                <li key={experience.id} className="mb-10 ml-4">
+                <li key={experience.job_id} className="mb-10 ml-4">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                        {experience.period}
+                        {experience.job_period}
                     </time>
-                    <h1 className="mb-1 text-lg font-semibold text-gray-900">
-                        {experience.company}
+                    <h1 className="text-black font-bold">
+                        {experience.job_title} - <span className="font-light">{experience.job_type}</span>
                     </h1>
-                    <h3 className="text-lg font-semibold text-gray-900">
-                        {experience.title}
-                    </h3>
+                    <h5 className="mb-1 text-lg font-medium text-gray-600">
+                        {experience.job_company}
+                    </h5>
                     <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                        {experience.description}
+                        {experience.job_description}
                     </p>
                     <a
                         href="#"
