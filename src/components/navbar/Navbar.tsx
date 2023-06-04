@@ -1,7 +1,5 @@
 "use client"
 
-"use client"
-
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -29,7 +27,7 @@ const Navbar: React.FC = () => {
     return (
         <>
             <div className="fixed w-full z-50 bg-white border-b border-gray-200 shadow-sm h-24 p-2">
-                <nav className={`${styles.navBar} fixed w-full z-50 flex justify-between bg-white border-b border-gray-200 shadow-sm h-24 p-2`}>
+                <nav className={`${styles.navBar} fixed w-full z-50 flex justify-between items-center bg-white border-b border-gray-200 shadow-sm h-24 p-2`}>
                     <div className="flex items-center">
                         <Link href="/">
                             <div className="cursor-pointer flex items-center">
@@ -55,7 +53,7 @@ const Navbar: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="md:hidden">
+                    <div className="md:hidden flex items-center">
                         <button onClick={toggleMenu} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                             <span className="sr-only">Open main menu</span>
                             {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -81,7 +79,6 @@ const Navbar: React.FC = () => {
                     </div>
                 )}
             </div>
-
         </>
     );
 }
