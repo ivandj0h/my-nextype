@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
                         );
                     })}
                     <button
-                        className={styles.logout}
+                        className="bg-sky-500 hover:bg-sky-600 hover:text-white text-white font-medium py-2 px-4 rounded-md max-w-fit"
                         onClick={() => console.log("clicked")}>Logout</button>
                 </div>
             </main>
