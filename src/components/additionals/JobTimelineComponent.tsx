@@ -6,7 +6,7 @@ import {helpers} from "@/components/additionals/helpers";
 
 const JobTimelineComponent: React.FC = () => {
     return (
-        <ol className="relative border-l border-gray-200 dark:border-gray-700">
+        <ol className="relative border-l border-gray-200 dark:border-gray-700 mb-40">
             {WorkingExperiences.map((experience) => {
                 const period_counter = helpers(experience.job_period);
 
@@ -23,7 +23,7 @@ const JobTimelineComponent: React.FC = () => {
                             {experience.job_company}
                         </h5>
                         <div className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                            <span className="font-bold">Job Description:</span>
+                            <span className="font-normal">Job Description:</span>
                             <ul className="list-disc pl-10">
                                 {experience.job_description.map((desc, index) => (
                                     <li key={index}>
