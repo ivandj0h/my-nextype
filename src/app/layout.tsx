@@ -16,14 +16,14 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-    title: process.env.NEXT_PUBLIC_METADATA_TITLE || 'My NexType App',
-    description: process.env.NEXT_PUBLIC_METADATA_DESCRIPTION || 'NextJS with TypeScript and TailwindCSS',
+    title: process.env.NEXT_PUBLIC_METADATA_TITLE || 'ivandjohn.com',
+    description: process.env.NEXT_PUBLIC_METADATA_DESCRIPTION || 'ivandjoh Official Website',
 }
 
 export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en" className={montserrat.className}>
-        <body className="flex flex-col min-h-screen">
+        <body className="flex flex-col min-h-screen overflow-hidden">
         <Navbar/>
         <div className="container flex-grow">
             {children}
