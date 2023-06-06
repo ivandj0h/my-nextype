@@ -1,9 +1,9 @@
 "use client"
 
-import React from "react";
+import React, {JSX} from "react";
 
 
-const RegisterPage: React.FC = () => {
+const RegisterPage: React.FC = (): JSX.Element => {
     return (
         <>
             <div>

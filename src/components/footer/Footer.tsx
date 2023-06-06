@@ -1,18 +1,16 @@
 "use client"
 
-import React from "react";
+import React, { JSX } from "react";
 import Link from "next/link";
-
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-
 import styles from "./footer.module.css";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {socialIcons} from "@/utils/nav-links/FooterLinks";
 
 type FooterProps = {
     className?: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ className }) => {
+const Footer: React.FC<FooterProps> = ({ className }): JSX.Element => {
     return (
         <>
             <div className="fixed bottom-0 w-full bg-gray-300 py-6 px-4 sm:px-6 lg:px-8">

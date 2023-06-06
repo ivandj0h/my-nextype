@@ -1,10 +1,10 @@
 "use client"
 
-import React from "react";
+import React, {JSX} from "react";
 import {WorkingExperiences} from "@/utils/static-datasource/WorkingExperiences";
 import {helpers} from "@/components/additionals/helpers";
 
-const JobTimelineComponent: React.FC = () => {
+const JobTimelineComponent: React.FC = (): JSX.Element => {
     return (
         <ol className="relative border-l border-gray-200 dark:border-gray-700 mb-40">
             {WorkingExperiences.map((experience) => {
