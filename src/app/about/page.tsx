@@ -1,10 +1,10 @@
 "use client"
 
-import React from "react";
+import React, {JSX} from "react";
 import Image from "next/image";
 import JobTimelineComponent from "@/components/additionals/JobTimelineComponent";
 
-const AboutPage: React.FC = () => {
+const AboutPage: React.FC = (): JSX.Element => {
     return (
         <div>
             <div className="flex flex-col md:flex-row mt-20 md:mt-48 items-center justify-center px-4">

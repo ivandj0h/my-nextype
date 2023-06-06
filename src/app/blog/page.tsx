@@ -1,9 +1,9 @@
 "use client"
 
-import React from "react";
+import React, {JSX} from "react";
 
 
-const BlogPage: React.FC = () => {
+const BlogPage: React.FC = (): JSX.Element => {
     return (
         <>
             <div>

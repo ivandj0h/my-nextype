@@ -1,9 +1,9 @@
 "use client"
 
-import React from "react";
+import React, {JSX} from "react";
 
 
-const CategoryPage: React.FC = () => {
+const CategoryPage: React.FC = (): JSX.Element => {
     return (
         <>
             <div>
