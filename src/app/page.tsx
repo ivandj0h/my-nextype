@@ -1,11 +1,11 @@
 "use client"
 
-import React from "react";
+import React, { JSX } from "react";
 import hero from "public/hero.jpg";
 import Image from "next/image";
 
 
-const HomePage: React.FC = () => {
+const HomePage: React.FC = (): JSX.Element => {
     return (
         <>
             <div className="flex flex-col md:flex-row items-center justify-center gap-5 mt-10 md:mt-48">

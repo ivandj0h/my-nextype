@@ -1,9 +1,9 @@
 "use client"
 
-import React from "react";
+import React, {JSX} from "react";
 
 
-const DashboardPage: React.FC = () => {
+const DashboardPage: React.FC = (): JSX.Element => {
     return (
         <>
             <div>

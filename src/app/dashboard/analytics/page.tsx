@@ -1,9 +1,9 @@
 "use client"
 
-import React from "react";
+import React, {JSX} from "react";
 
 
-const AnalyticsPage: React.FC = () => {
+const AnalyticsPage: React.FC = (): JSX.Element => {
     return (
         <>
             <div>

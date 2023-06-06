@@ -1,9 +1,9 @@
 "use client"
 
-import React from "react";
+import React, {JSX} from "react";
 
 
-const Loading: React.FC = () => {
+const Loading: React.FC = (): JSX.Element => {
     return (
        <div>Loading...</div>
     );

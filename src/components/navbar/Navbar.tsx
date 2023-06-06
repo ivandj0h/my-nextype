@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import React, {JSX, useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { links } from "@/utils/nav-links/NavLinks";
@@ -8,7 +8,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 
 import styles from "./navbar.module.css";
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC = (): JSX.Element => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
