@@ -11,7 +11,7 @@ export const socialIcons = [
     {
         id: 2,
         title: "LinkedIn",
-        url: "https://linkedin.com/in/ivandjoh",
+        url: "https://www.linkedin.com/in/ivandjoh/",
         icon: faLinkedin,
     },
     {
